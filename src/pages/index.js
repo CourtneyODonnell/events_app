@@ -76,7 +76,17 @@ export default function Home({title}) {
 }
 
 
-export function getServerSideProps() {
+export async function getServerSideProps() {
+  // returns an asynchronous function so must add await
+  //gets from server side
+  const { events_categories } = await import('data/data.json');
+  console.log(events_categories);
+
+  // // example of external api fetch
+  // const res = await fetch('https://jsonplaceholder.typicode.com/users');
+  // const data= await res.json();
+
+
   return {
     props: {
       title: 'Hello everyone'
