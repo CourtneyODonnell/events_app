@@ -1,39 +1,23 @@
 const EventsPage = () => {
   return (
-    <>
-    <h1>Events Page</h1>
-
-    <a href=''>
-        {' '}
+    <div>
+      <h1>Events Page</h1>
+      <div>
+        <a href="">
           <img />
-        </a>
-        <div>
           <h2>Events in London</h2>
-          
-        </div>
-
-        <a href=''>
-        {' '}
-          <img />
         </a>
-        <div>
+        <a href="">
+          <img />
           <h2>Events in San Francisco</h2>
-          
-        </div>
-
-        <a href=''>
-        {' '}
-          <img />
         </a>
-        <div>
+        <a href="">
+          <img />
           <h2>Events in Barcelona</h2>
-         
-        </div>
-
-    </>
-
-
-  )
+          </a>
+      </div>
+    </div>
+  );
 };
 
 export default EventsPage;
